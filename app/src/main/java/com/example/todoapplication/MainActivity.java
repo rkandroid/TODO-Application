@@ -17,7 +17,6 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     Dialog dialog;
     DB_Helper db_helper;
-    Todo_Model todo_model;
     TodoRecyclerViewAdapter recyclerViewAdapter;
     RecyclerView recyclerView;
     ArrayList<Todo_Model> allTodos;

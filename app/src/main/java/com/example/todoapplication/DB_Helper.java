@@ -22,7 +22,7 @@ public class DB_Helper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DELETE FROM SQLITE_SEQUENCE WHERE name='TableName'");
+
     }
 
     public Boolean insertData(String name, String number, String city) {
@@ -51,7 +51,6 @@ public class DB_Helper extends SQLiteOpenHelper {
                         cursor.getString(2),
                         cursor.getString(3))
                 );
-
             } while (cursor.moveToNext());
         }
         return todosArrayList;
